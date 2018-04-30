@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>forms</h1>
+
+  <h2>Old school form</h2>
+  
+  <% if (payload.result !== undefined) { %>
+    <h2>
+      The result is: 
+      <span id="result"><%= payload.result %></span>
+    </h2>
+  <% } %>
+
+  <form action="/form" method="GET">
+    <input type="number" name="input1" value="">
+    <input type="number" name="input2" value="">
+    <input type="submit" value="ADD">
+  </form>
+
+</body>
+
+</html>
