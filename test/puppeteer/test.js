@@ -7,7 +7,6 @@ describe("puppeteer", function() {
     it("should print 5", async function() {
       const browser = await puppeteer.launch();
       const page = await browser.newPage();
-
       await page.goto("http://localhost:3000/form");
       await page.waitFor("input[name=input1]");
       await page.click("input[name=input1]");
@@ -21,6 +20,7 @@ describe("puppeteer", function() {
       );
       expect(result).to.eql("5");
       await page.close();
+      await browser.close();
     });
   });
 });
