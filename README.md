@@ -1,11 +1,14 @@
 ## Usage
-end to end testing:
-```sh
-docker-compose run --rm nightwatch
-```
 
-unit testing:
+This command start a docker which:
+- Launch the server
+- Run unit tests
+- Run e2e tests
+
 ```sh
-cd app
 npm run test
 ```
+
+Produce a screenshot in `reports/`
+Produce code coverage report in `coverage/`
+Produce a video of the end to end testing in `videos/`
