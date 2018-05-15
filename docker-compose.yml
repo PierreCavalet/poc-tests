@@ -1,0 +1,20 @@
+version: '2.2'
+services:
+  test:
+    build: .
+    command: sh -c ./entrypoint.sh
+    volumes:
+      - .:/usr/app/
+      - ./test:/home/node      
+    depends_on:
+      - chromedriver
+    ports:
+      - "3000:3000"
+  chromedriver:
+    image: blueimp/chromedriver
+    environment:
+      - VNC_ENABLED=true
+      - EXPOSE_X11=true
+    ports:
+      - 5900:5900
+      
