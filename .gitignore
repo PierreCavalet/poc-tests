@@ -5,3 +5,4 @@ selenium-debug.log
 reports
 npm-debug.log
 videos
+browserstack.json

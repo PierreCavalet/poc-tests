@@ -9,3 +9,4 @@ done
 
 npm run unit
 npm run e2e
+npm run browserstack

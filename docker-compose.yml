@@ -5,6 +5,9 @@ services:
     command: sh -c ./entrypoint.sh
     volumes:
       - .:/usr/app/
+    environment:
+      - BROWSERSTACK_USER
+      - BROWSERSTACK_KEY
     depends_on:
       - chromedriver
     ports:

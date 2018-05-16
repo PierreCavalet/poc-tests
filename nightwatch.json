@@ -28,6 +28,17 @@
         "delete_on_success": false,
         "path": "videos"
       }
+    },
+
+    "browserstack": {
+      "launch_url": "https://afternoon-lake-72162.herokuapp.com",
+      "selenium_port": 80,
+      "selenium_host": "hub-cloud.browserstack.com",
+      "desiredCapabilities": {
+        "device": "iPhone 7",
+        "realMobile": "true",
+        "os_version": "10.3"
+      }
     }
   }
 }
