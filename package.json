@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "unit": "nyc --reporter=text-summary --reporter=lcov mocha --recursive",
+    "unit": "nyc --reporter=text-summary --reporter=lcov mocha --recursive --reporter mochawesome",
     "e2e": "./node_modules/.bin/nightwatch",
     "browserstack": "./node_modules/.bin/nightwatch --env browserstack",
     "test": "docker-compose run --rm --name test test"
@@ -20,6 +20,7 @@
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "mocha": "^5.1.1",
+    "mochawesome": "^3.0.2",
     "nightwatch": "^0.9.21",
     "nightwatch-video-recorder": "^1.1.0",
     "nyc": "^11.7.1",
