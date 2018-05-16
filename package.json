@@ -7,7 +7,7 @@
     "start": "node index.js",
     "unit": "nyc --reporter=text-summary --reporter=lcov mocha --recursive",
     "e2e": "./node_modules/.bin/nightwatch",
-    "test": "docker-compose run --rm test"
+    "test": "docker-compose run --rm --name test test"
   },
   "author": "",
   "license": "ISC",

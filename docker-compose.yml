@@ -5,7 +5,6 @@ services:
     command: sh -c ./entrypoint.sh
     volumes:
       - .:/usr/app/
-      - ./test:/home/node      
     depends_on:
       - chromedriver
     ports:

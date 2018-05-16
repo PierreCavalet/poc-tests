@@ -20,7 +20,7 @@
 
   "test_settings": {
     "default": {
-      "launch_url": "http://node:3000",
+      "launch_url": "http://test:3000",
       "selenium_port": 4444,
       "selenium_host": "chromedriver",
       "videos": {
